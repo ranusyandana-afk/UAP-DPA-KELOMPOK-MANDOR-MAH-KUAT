@@ -1,3 +1,5 @@
+# UAP-DPA-KELOMPOK-MANDOR-MAH-KUAT
+
 # STRUKTUR DATA
 jadwal_kuliah = [ 
     { "hari": "Senin", "Mata Kuliah": "DPA", "Waktu dan Tempat": "09.15-10.45, GIK L2" },
