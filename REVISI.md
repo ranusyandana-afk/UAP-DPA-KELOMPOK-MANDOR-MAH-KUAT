@@ -1,4 +1,4 @@
-# Struktur Data nya
+# Struktur Data Nya
 jadwal = [
 
     { "hari": "Senin", "Mata Kuliah": "DPA", "Waktu dan Tempat": "09.15-10.45, GIK L2" },
