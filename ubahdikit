@@ -1,4 +1,4 @@
-#STRUKTUR DATA
+# STRUKTUR DATA
 jadwal_kuliah = [ 
     { "hari": "Senin", "Mata Kuliah": "DPA", "Waktu dan Tempat": "09.15-10.45, GIK L2" },
     { "hari": "Senin", "Mata Kuliah": "Praktikum DPA", "Waktu dan Tempat": "13.55-15.30, GIK L1B" },
@@ -31,7 +31,7 @@ def tambah_jadwal():
      print(f"\n Jadwal '{matkul}' pada hari {hari} pukul {jam} berhasil ditambahkan!")
 
 
-#UNTUK NAMPILIN JADWAL
+# UNTUK NAMPILIN JADWAL
 def tampilkan_jadwal():
      print("\n" + "="*30)
      print("        DAFTAR JADWAL")
@@ -48,7 +48,7 @@ def tampilkan_jadwal():
           print(f"{i:<3} | {item['hari']:<10} | {item['Mata Kuliah']:<15} | {item['Waktu dan Tempat']}")
 
 
-#UNTUK CARI JADWAL
+# UNTUK CARI JADWAL
 def cari_jadwal():
      print("\n" + "="*30)
      print("        CARI JADWAL")
@@ -68,7 +68,7 @@ def cari_jadwal():
              print(f"{i}. {item['hari']} | {item['Mata Kuliah']} | {item['Waktu dan Tempat']}")
 
 
-#UNTUK EDIT JADWAL
+# UNTUK EDIT JADWAL
 def edit_jadwal():
     print("\n" + "="*30)
     print("        EDIT JADWAL")
@@ -79,7 +79,7 @@ def edit_jadwal():
         return
 
     try:
-        nomor = int(input("Pilih nomor jadwal yang ingin diubah: "))
+        nomor = int(input("\nPilih nomor jadwal yang ingin diubah: "))
         index = nomor - 1
 
         if index < 0 or index >= len(jadwal_kuliah):
@@ -105,7 +105,7 @@ def edit_jadwal():
         print("Input harus berupa angka.")
 
 
-#UNTUK HAPUS JADWAL YANG DIINGINKAN
+# UNTUK HAPUS JADWAL YANG DIINGINKAN
 def hapus_jadwal():
     print("\n" + "="*30)
     print("        HAPUS JADWAL")
@@ -130,7 +130,7 @@ def hapus_jadwal():
         print("Input harus berupa angka.")
 
 
-#BAGIAN MENU
+# BAGIAN MENU
 def menu():
      while True:
           print("\nSTUDY SCHEDLE MANAGER")
