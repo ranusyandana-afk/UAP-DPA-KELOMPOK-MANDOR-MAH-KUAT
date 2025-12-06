@@ -24,5 +24,20 @@ def tampilkan_jadwal():
     
     for i, item in enumerate(jadwal, start=1):
         print(f"{i}. {item['hari']} | {item['mapel']} | {item['jam']}")
+def cari_jadwal():
+    print("\n=== CARI JADWAL ===")
+    keyword = input("Masukkan kata kunci (hari/mapel): ").lower()
+
+    hasil = []
+    for item in jadwal:
+        if keyword in item['hari'].lower() or keyword in item['mapel'].lower():
+            hasil.append(item)
+    
+    if not hasil:
+        print("Tidak ada jadwal yang cocok.")
+    else:
+        for i, item in enumerate(hasil, start=1):
+            print(f"{i}. {item['hari']} | {item['mapel']} | {item['jam']}")
+
 
 
