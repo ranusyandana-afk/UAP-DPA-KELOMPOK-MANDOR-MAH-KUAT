@@ -13,8 +13,6 @@ jadwal = [
     { "hari": "Kamis", "Mata Kuliah": "POK", "Waktu dan Tempat": "15.50-17.30, GIK L1B" },
 ]
 
-jadwal = []
-
 # Buat Nambaj Jadwal
 def tambah_jadwal():
      print("\n" + "="*30)
