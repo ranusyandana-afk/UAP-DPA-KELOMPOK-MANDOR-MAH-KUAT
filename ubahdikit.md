@@ -135,7 +135,7 @@ def hapus_jadwal():
 # BAGIAN MENU
 def menu():
      while True:
-          print("\nSTUDY SCHEDLE MANAGER")
+          print("\n COLLEGE STUDY SCHEDLE MANAGER")
           print("1. Tambah Jadwal")
           print("2. Ubah Jadwal")
           print("3. Hapus Jadwal")
